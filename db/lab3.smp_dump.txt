@@ -1,0 +1,10 @@
+
+State Machine - |lab3|current_state
+Name current_state.VERTICAL current_state.ERASE current_state.DELAY current_state.DONE current_state.INCRY current_state.INCRX current_state.INIT 
+current_state.INIT 0 0 0 0 0 0 0 
+current_state.INCRX 0 0 0 0 0 1 1 
+current_state.INCRY 0 0 0 0 1 0 1 
+current_state.DONE 0 0 0 1 0 0 1 
+current_state.DELAY 0 0 1 0 0 0 1 
+current_state.ERASE 0 1 0 0 0 0 1 
+current_state.VERTICAL 1 0 0 0 0 0 1 

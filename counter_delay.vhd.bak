@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.all;
+
+entity counter_delay is
+ 
+	
+ 
+end entity;
+
+architecture bhv of counter_delay is
+
+
+
+begin
+
+
+
+
+end architecture;

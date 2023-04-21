@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.all;
+
+entity clear_screen is
+	port (
+		clk : IN std_logic;
+		resetb : IN std_logic;
+		en : IN std_logic;
+		
+		cleared : OUT std_logic
+	);
+ 
+end entity;
+
+architecture bhv of clear_screen is
+	
+
+begin
+
+
+	process(clk, resetb, en)
+	
+		variable x_value : integer := 159;
+		variable y_value : integer := 119;
+	
+	begin
+	
+		if(resetb = '0' or en = '0') then
+			
+			
+			
+		elsif (rising_edge(clk) and en = '1') then
+		
+		
+		end if;
+			
+		
+		
+	end process;
+
+
+end architecture;

@@ -1,0 +1,49 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+LIBRARY WORK;
+USE WORK.ALL;
+
+ENTITY XY_MUX IS
+	
+	PORT(
+		
+		en : IN std_logic;
+		
+		X_CLEAR : IN unsigned(6 downto 0);
+		Y_CLEAR : IN unsigned(7 downto 0);
+		
+		X_LINE : IN unsigned(6 downto 0);
+		Y_LINE : IN unsigned(7 downto 0);
+		
+		X_OUT : OUT unsigned(6 downto 0);
+		Y_OUT : OUT unsigned(7 downto 0);
+		
+	);
+	
+END ENTITY;
+
+
+ARCHITECTURE bhv OF XY_MUX IS
+	
+	
+
+BEGIN
+	
+	PROCESS(en)
+		
+	BEGIN
+	
+		if(en = '0')then
+			X_OUT <= X_LINE;
+			Y_OUT <= Y_LINE;
+		else
+			X_OUT <= X_CLEAR;
+			Y_OUT <= Y_CLEAR;
+		end if;
+		
+	END PROCESS;
+		
+		
+END ARCHITECTURE;
